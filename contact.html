@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Contact </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="stylesheet/styles.css" />
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
+<script type="text/javascript"> 
+    function sendEmail() { 
+    	console.log("Printing");
+	     Email.send({ 
+	       Host: "smtp.gmail.com", 
+	       Username: "", 
+	       Password: "", 
+	       To: '', 
+	       From: "", 
+	       Subject: "Sending Email using javascript", 
+	       Body: "Well that was easy!!", 
+	     }) 
+        .then(function (message) { 
+        	console.log(message);
+          alert("mail sent successfully") 
+        }); 
+    } 
+  </script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="menu">
+    <ul>
+      <li><a href="index.html" class="current">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="strategy.html">Strategy</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="header_bar">
+  	<center><h1>Contact</h1></center>
+  </div>
+  <div id="content_contactus">
+    <div class="section" style="float:left;margin-right:150px;">
+    <br></br> 
+    <form>
+    	<label style="margin-left: -100px;"> Name
+    		<div class="input-group">
+		    	<div class="input-group-addon"> 
+		    		<i class="fa fa-user"></i>
+		    	</div>
+		    	<p> 
+			    	<span>
+			    		<input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false">
+			    	</span>
+		    	</p>
+    		</div>
+    	</label>
+    	<label style="margin-left: -100px;"> Email
+    		<div class="input-group">
+		    	<div class="input-group-addon"> 
+		    		<i class="fa fa-user"></i>
+		    	</div>
+		    	<p> 
+			    	<span>
+			    		<input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false">
+			    	</span>
+		    	</p>
+    		</div>
+    	</label>
+    	<label style="margin-left: -100px;"> Phone
+    		<div class="input-group">
+		    	<div class="input-group-addon"> 
+		    		<i class="fa fa-user"></i>
+		    	</div>
+		    	<p> 
+			    	<span>
+			    		<input type="text" name="your-name" value="" size="40" aria-required="true" aria-invalid="false">
+			    	</span>
+		    	</p>
+    		</div>
+    	</label>
+    	<label style="margin-left: -100px;"> Your Message
+    		<div class="input-group">
+		    	<div class="input-group-addon"> 
+		    		<i class="fa fa-user"></i>
+		    	</div>
+		    	<p> 
+			    	<span>
+			    		<textarea name="your-message" cols="40" rows="6" aria-invalid="false"></textarea>
+			    	</span>
+		    	</p>
+    		</div>
+    	</label>
+    	<input type="button" onclick="sendEmail()" value="Submit" style="margin-left: -100px;"></input></form>
+    </div>
+    <div class="section"><br></br> 
+    	<div class="address-bio">
+    		<div class="header">MANUFACTURING LOCATIONS</div> 
+    		<address>
+    		<strong>Mumbai</strong>
+    		<li> 3107,new balaji nagar,</br>&nbsp;&nbsp;&nbsp;Goandevi Road, Ambernath west
+    		</li>
+    		<li style="display:none;"><i class="fa fa-fax"></i> <span></span></li>
+    		<li style="display:none;"><i class="fa fa-fax"></i> <span></span></li>
+    		<li style="display:none;"><i class="fa fa-envelope"></i> 
+    		</address>
+    	</div>
+    </div>
+    <br></br> 
+    <br></br>
+    <br></br> 
+    <br></br>
+    <br></br> 
+  </div> 
+</div>
+<div id="footer_wrapper">
+  <div id="footer">
+    <ul class="footer_menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="strategy.html">Strategy</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="clients.html">Clients</a></li>
+      <li class="last_menu"><a href="contact.html">Contact</a></li>
+    </ul>
+    Copyright &copy; 2021 <a href="#">VRaag enterprise pvt ltd.</a> | Designed by Vasudevan</div>
+</div>
+</body>
+</html>
